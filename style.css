@@ -91,20 +91,54 @@ button:last-child {
     grid-row: 1 / 3;
     display: flex;
     flex-direction: column;
+
 }
 
-.sidebar > * {
+.logo {
+    max-width: 247px;
+    align-self: center;
+    margin-top: 1em;
+}
+
+.side-menu {
+    margin-left: 1em;
+}
+
+/*.side-menu {
+    display: grid;
+    grid-template: 25fr 8fr / 1fr 8fr;
+} */
+
+/*.sidebar > * {
     margin-left: 24px;
     margin-bottom: 52px;
+} */
+
+.side-menu-links-1 {
+    margin-top: 2em;
 }
 
-.sidebar > ul {
+.side-menu-links-2 {
+    margin-top: 2em;
+}
+
+.side-menu-links-1 div img {
+    margin-right: 10px;
+}
+
+.side-menu > ul {
     list-style-type: none;
     font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
     font-weight: 400;
     font-size: 26px;
     font-style: italic;
     color: white;
+}
+
+.side-menu-links-1 > div, .side-menu-links-2 > div {
+    display: grid;
+    grid-template: 50px / 50px 150px;
+    align-items: center;
 }
 
 .main {

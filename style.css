@@ -1,4 +1,4 @@
-* {
+body {
     margin: 0;
     padding: 0;
 }
@@ -128,5 +128,116 @@ button:last-child {
 
 .main {
     background-color: white;
-    grid-column: 2 / 3;
+    display: grid;
+    grid-template: 0.5fr 9fr / 5fr 2.5fr;
+    gap: 15px;
+}
+
+h2 {
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+    font-weight: normal;
+}
+
+.cards {
+    display: grid;
+    grid-template: repeat(auto-fit, minmax(250px, 0.2fr)) / repeat(auto-fit, minmax(250px, 0.5fr));
+    gap: 15px;
+}
+
+.card {
+    display: grid;
+    grid-template: 0.2fr 1fr / 1fr;
+}
+
+.card-top {
+    display: flex;
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 16px 16px 0 0;
+    background-color: #D7D2EE;
+}
+
+.card-top h3 {
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+    font-weight: 800;
+}
+
+.card-bottom {
+    border-left: 0.5px solid;
+    border-bottom: 0.5px solid;
+    border-right: 0.5px solid;
+    border-radius: 0 0 16px 16px;
+    display: grid;
+    gap: 15px;
+}
+
+.card h3 {
+    align-self: center;
+    margin: 10px;
+}
+
+.card p {
+    margin: 10px;
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+    font-weight: 350;
+    font-style: italic;
+}
+
+.card-icons {
+    justify-self: end;
+    align-self: end;
+    margin: 15px;
+    margin-right: 20px;
+}
+
+.card-icons img {
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.others {
+    display: grid;
+    grid-template: repeat(auto-fit, minmax(50px, 0.5fr)), 0.1fr, repeat(auto-fit, minmax(150px, 1fr)) / 1fr;
+}
+
+.others h2 {
+    align-self: center;
+}
+
+.announcements {
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 16px;
+    background-color: #D7D2EE;
+    padding: 10px;
+    display: grid;
+    grid-template: repeat(auto-fit, minmax(50px, 0.5fr)) / 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.announcement h3 {
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.announcement p {
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+    font-weight: 400;
+}
+
+.trending {
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 16px;
+    padding: 10px;
+    display: grid;
+    grid-template: repeat(auto-fit, minmax(50px, 0.25fr)) / 1fr;
+}
+
+.feed {
+    display: grid;
+    grid-template: 1fr / 0.15fr 1fr;
 }
